@@ -31,14 +31,9 @@ class Offload:
 
         # CONSIDER A SCENARIO RANDOM IS NOT GOOD
         # LOCAL CAP SHOULD NOT BE TOO SMALL, OTHERWISE, THE STATE MATRIX IS TOO LARGE (EXCEED THE MAXIMUM)
-        # SHOULD NOT BE LESS THAN ONE
-        self.comp_cap_iot = 1 * np.ones(self.n_iot) * self.duration  # 2.5 Gigacycles per second  * duration
-        self.comp_cap_fog = 41.8 * np.ones([self.n_fog]) * self.duration  # Gigacycles per second * duration
-        self.tran_cap_iot = 14 * np.ones([self.n_iot, self.n_fog]) * self.duration  # Mbps * duration
-        self.comp_density = 0.297 * np.ones([self.n_iot])  # 0.297 Gigacycles per Mbits
-        self.comp_cap_cloud = 200 * np.ones([self.n_cloud]) * self.duration
-        self.max_delay = max_delay # time slots
 
+
+        # khcbacglajclg"++++++++++++{""}
         # BITARRIVE_SET (MARKOVIAN)
         self.task_arrive_prob = 0.3
         self.max_bit_arrive = 5 # Mbits
